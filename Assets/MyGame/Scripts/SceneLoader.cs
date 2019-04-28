@@ -14,6 +14,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("End");
     }
+
+    public void LoadSceneIntro()
+    {
+        SceneManager.LoadScene("Intro");
+    }
     // Use this for initialization
     void Start()
     {
