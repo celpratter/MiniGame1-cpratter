@@ -310,6 +310,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &177184061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1298929472642062, guid: eee90421333d84a6fb3959b99fb66487,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299748387}
+--- !u!61 &177184062
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177184061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.14, y: 7.14}
+    newSize: {x: 7.14, y: 7.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.14, y: 7.14}
+  m_EdgeRadius: 0
 --- !u!1 &179223153
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +490,7 @@ RectTransform:
   - {fileID: 80066174}
   - {fileID: 2068313687}
   - {fileID: 609055554}
+  - {fileID: 1570045201}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -478,6 +509,7 @@ GameObject:
   - component: {fileID: 609055554}
   - component: {fileID: 609055555}
   - component: {fileID: 609055556}
+  - component: {fileID: 609055557}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -492,7 +524,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 609055553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 407, y: -314, z: 0}
+  m_LocalPosition: {x: 23, y: -314, z: 0}
   m_LocalScale: {x: 16.208694, y: 16.208694, z: 16.208694}
   m_Children: []
   m_Father: {fileID: 193298019}
@@ -555,6 +587,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529805269f00949d3b0b4ff20651da7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &609055557
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609055553}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.79, y: 5.92}
+    newSize: {x: 7.79, y: 5.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.79, y: 5.92}
+  m_EdgeRadius: 0
 --- !u!114 &627440521 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114237870335782696, guid: eee90421333d84a6fb3959b99fb66487,
@@ -600,7 +657,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 58222340981505586, guid: eee90421333d84a6fb3959b99fb66487, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: eee90421333d84a6fb3959b99fb66487, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1570045200
@@ -624,12 +682,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1570045200}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.51, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 445, z: 0}
+  m_LocalScale: {x: 76.8, y: 76.8, z: 76.8}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 193298019}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865104513
 GameObject:
@@ -731,7 +789,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068313686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 25.891586, y: 25.891586, z: 25.891586}
   m_Children: []
   m_Father: {fileID: 193298019}
