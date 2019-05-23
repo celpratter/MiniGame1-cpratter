@@ -327,6 +327,16 @@ Prefab:
       propertyPath: m_Text
       value: WEITER
       objectReference: {fileID: 0}
+    - target: {fileID: 224261666789152484, guid: 2b67e4620b1dd490b9b18343ac76f910,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224261666789152484, guid: 2b67e4620b1dd490b9b18343ac76f910,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b67e4620b1dd490b9b18343ac76f910, type: 2}
   m_IsPrefabAsset: 0

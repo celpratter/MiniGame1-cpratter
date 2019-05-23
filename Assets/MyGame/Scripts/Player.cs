@@ -4,27 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public Rigidbody2D rigidbody2d;
 
-    // Use this for initialization
-    void Start()
+    private const string AXISHORIZONTAL = "Horizontal";
+    private float moveSpeed = 6.0f;
+
+    private void Move()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-    }
+        var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
+        var newPosX = Mathf.Clamp(transform.position.x + deltaX,
+            -300f, 300f);
 
-    // Update is called once per frame
+        transform.position = new Vector2(newPosX, transform.position.y);
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            rigidbody2d.velocity = new Vector2(speed * -1, 0f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            rigidbody2d.velocity = new Vector2(speed * 1, 0f);
-        }
-
+        Move();
     }
 }
