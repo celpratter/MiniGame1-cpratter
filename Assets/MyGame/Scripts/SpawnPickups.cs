@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class SpawnPickups : MonoBehaviour
 {
     public Flower flowerPrefab;
     public GameObject flowerParent;

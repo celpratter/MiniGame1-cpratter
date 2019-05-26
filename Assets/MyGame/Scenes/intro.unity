@@ -337,6 +337,16 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: -52
       objectReference: {fileID: 0}
+    - target: {fileID: 114825024500470708, guid: 2b67e4620b1dd490b9b18343ac76f910,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114825024500470708, guid: 2b67e4620b1dd490b9b18343ac76f910,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b67e4620b1dd490b9b18343ac76f910, type: 2}
   m_IsPrefabAsset: 0
@@ -426,7 +436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1725088886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da41ea2a475db4ede9576f1ca78cee89, type: 3}
+  m_Script: {fileID: 11500000, guid: 2205b20d031434060b13c78fea4cd924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1725088888
