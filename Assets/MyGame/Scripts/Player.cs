@@ -12,10 +12,9 @@ public class Player : MonoBehaviour
     // public TextMeshProUGUI pointsScore;
     private void Move()
     {
-        transform.position.z == 0;
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
         var newPosX = Mathf.Clamp(transform.position.x + deltaX,
-            -300f, 300f);
+            -6f, 6f);
 
         transform.position = new Vector2(newPosX, transform.position.y);
     }
@@ -32,5 +31,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        var newPosZ = transform.position.z;
+        newPosZ = 0;
     }
 }
