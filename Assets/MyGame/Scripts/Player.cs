@@ -23,13 +23,13 @@ public class Player : MonoBehaviour
         Debug.Log("TriggerEvent " + collision.gameObject.name);
         if (collision.gameObject.name == "Flower(Clone)")
         {
-            score += 5;
+            score += 20;
             Debug.Log("score " + score);
             pointsScore.text = score.ToString();
         }
         if (collision.gameObject.name == "Spiegelei(Clone)")
         {
-            score += 5;
+            score -= 10;
             Debug.Log("score " + score);
             pointsScore.text = score.ToString();
         }
