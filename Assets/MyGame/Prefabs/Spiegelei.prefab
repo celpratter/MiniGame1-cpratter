@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212040618106128462}
   - component: {fileID: 50214186936983156}
   - component: {fileID: 61070338540488862}
-  - component: {fileID: 114615913094652606}
+  - component: {fileID: 114593585232839272}
   m_Layer: 0
   m_Name: Spiegelei
   m_TagString: Untagged
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.87, y: 2.97}
   m_EdgeRadius: 0
---- !u!114 &114615913094652606
+--- !u!114 &114593585232839272
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136355836029376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd715274e8e8c478896142cec0b242aa, type: 3}
+  m_Script: {fileID: 11500000, guid: 258c0ea08bf634123b21a2c57f5ea024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212040618106128462
