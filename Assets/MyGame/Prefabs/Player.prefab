@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212970600131277086}
   - component: {fileID: 61726292375247440}
   - component: {fileID: 114984189367025234}
-  - component: {fileID: 114776624190903646}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -37,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1295302464319608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23, y: -314, z: 0}
+  m_LocalPosition: {x: -3, y: -247, z: 0}
   m_LocalScale: {x: 16.208694, y: 16.208694, z: 16.208694}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,7 +58,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.79, y: 5.92}
+    oldSize: {x: 7.79, y: 6.1}
     newSize: {x: 7.79, y: 5.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -68,18 +67,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.79, y: 5.92}
   m_EdgeRadius: 0
---- !u!114 &114776624190903646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1295302464319608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c8f761b4226430eb9e89e39a9647ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsScore: {fileID: 0}
 --- !u!114 &114984189367025234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529805269f00949d3b0b4ff20651da7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsScore: {fileID: 0}
 --- !u!212 &212970600131277086
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1096790093ec4f418b5388846eb394a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowerPrefab: {fileID: 627440521}
+  flowerPrefab: {fileID: 635955612}
   flowerParent: {fileID: 1570045200}
 --- !u!4 &132894972
 Transform:
@@ -551,9 +551,14 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 621603606}
   m_CullTransparentMesh: 0
---- !u!114 &627440521 stripped
+--- !u!1 &635955611 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1298929472642062, guid: eee90421333d84a6fb3959b99fb66487,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299748387}
+--- !u!114 &635955612 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114237870335782696, guid: eee90421333d84a6fb3959b99fb66487,
+  m_CorrespondingSourceObject: {fileID: 114745160014509130, guid: eee90421333d84a6fb3959b99fb66487,
     type: 2}
   m_PrefabInternal: {fileID: 1299748387}
   m_Script: {fileID: 11500000, guid: cd715274e8e8c478896142cec0b242aa, type: 3}
@@ -1107,12 +1112,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 50650073442718540, guid: eee90421333d84a6fb3959b99fb66487,
-        type: 2}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114237870335782696, guid: eee90421333d84a6fb3959b99fb66487, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: eee90421333d84a6fb3959b99fb66487, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1505759367
@@ -1155,7 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed45e9d49cfe491eb501f7805e69ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 5
+  timeLeft: 10
   countdown: {fileID: 719343851}
   timeOver: {fileID: 1595958996}
   darkCanvas: {fileID: 1172728060}
@@ -1598,15 +1599,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114776624190903646, guid: 28e01c9ee26824a27a7d7dd861dee111,
+    - target: {fileID: 114984189367025234, guid: 28e01c9ee26824a27a7d7dd861dee111,
         type: 2}
       propertyPath: pointsScore
       value: 
       objectReference: {fileID: 80066175}
-    - target: {fileID: 1295302464319608, guid: 28e01c9ee26824a27a7d7dd861dee111, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114984189367025234, guid: 28e01c9ee26824a27a7d7dd861dee111,
+        type: 2}
+      propertyPath: flowerpickup
+      value: 
+      objectReference: {fileID: 635955611}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e01c9ee26824a27a7d7dd861dee111, type: 2}
   m_IsPrefabAsset: 0
