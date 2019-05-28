@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("TriggerEvent " + collision.gameObject.name);
-        if (collision.gameObject.name == "FLower")
+        if (collision.gameObject.name == "Flower(Clone)")
         {
             score += 5;
             Debug.Log("score " + score);
