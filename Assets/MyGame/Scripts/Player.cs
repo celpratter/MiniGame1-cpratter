@@ -27,6 +27,12 @@ public class Player : MonoBehaviour
             Debug.Log("score " + score);
             pointsScore.text = score.ToString();
         }
+        if (collision.gameObject.name == "Spiegelei(Clone)")
+        {
+            score += 5;
+            Debug.Log("score " + score);
+            pointsScore.text = score.ToString();
+        }
     }
     void Update()
     {

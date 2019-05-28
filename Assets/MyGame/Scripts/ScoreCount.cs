@@ -15,6 +15,12 @@ public class ScoreCount : MonoBehaviour
             pointsScore.text = score.ToString();
             Debug.Log("Trigger");
         }
+        if (collision.gameObject.name == "Spie")
+        {
+            score += 20;
+            pointsScore.text = score.ToString();
+            Debug.Log("Trigger");
+        }
 
     }
 }
