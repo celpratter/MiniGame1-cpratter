@@ -15,8 +15,6 @@ public class Timer : MonoBehaviour
     {
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
-        // timeOver.enabled = false;
-        // darkCanvas.enabled = false;
     }
     void Update()
     {
@@ -24,8 +22,6 @@ public class Timer : MonoBehaviour
         if (timeLeft == 0)
         {
             SceneManager.LoadScene("End");
-            // timeOver.enabled = true;
-            // darkCanvas.enabled = true;
         }
     }
 
