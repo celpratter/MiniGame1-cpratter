@@ -1220,7 +1220,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1798907958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.19, z: 0}
+  m_LocalPosition: {x: 0, y: -4.38, z: 0}
   m_LocalScale: {x: 13.8726, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1448,6 +1448,12 @@ Prefab:
       propertyPath: flowerpickup
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114984189367025234, guid: 28e01c9ee26824a27a7d7dd861dee111,
+        type: 2}
+      propertyPath: scoreCount
+      value: 
+      objectReference: {fileID: 11400000, guid: daed303f8851f40fd863ec83f9c1b90c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e01c9ee26824a27a7d7dd861dee111, type: 2}
   m_IsPrefabAsset: 0

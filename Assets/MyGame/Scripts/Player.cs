@@ -8,8 +8,12 @@ public class Player : MonoBehaviour
 
     private const string AXISHORIZONTAL = "Horizontal";
     private float moveSpeed = 6.0f;
-    private int score = 0;
     public TextMeshProUGUI pointsScore;
+    public MyScore scoreCount;
+    void Start()
+    {
+        scoreCount.score = 0;
+    }
     private void Move()
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
@@ -23,15 +27,15 @@ public class Player : MonoBehaviour
         Debug.Log("TriggerEvent " + collision.gameObject.name);
         if (collision.gameObject.name == "Flower(Clone)")
         {
-            score += 20;
-            Debug.Log("score " + score);
-            pointsScore.text = score.ToString();
+            scoreCount.score += 20;
+            Debug.Log("score " + scoreCount.score);
+            pointsScore.text = scoreCount.score.ToString();
         }
         if (collision.gameObject.name == "Spiegelei(Clone)")
         {
-            score -= 10;
-            Debug.Log("score " + score);
-            pointsScore.text = score.ToString();
+            scoreCount.score -= 10;
+            Debug.Log("score " + scoreCount.score);
+            pointsScore.text = scoreCount.score.ToString();
         }
     }
     void Update()
