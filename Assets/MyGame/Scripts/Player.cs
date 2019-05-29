@@ -31,6 +31,12 @@ public class Player : MonoBehaviour
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
         }
+        if (collision.gameObject.name == "Seeds(Clone)")
+        {
+            scoreCount.score += 20;
+            Debug.Log("score " + scoreCount.score);
+            pointsScore.text = scoreCount.score.ToString();
+        }
         if (collision.gameObject.name == "Spiegelei(Clone)")
         {
             scoreCount.score -= 10;
