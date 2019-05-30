@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Spiegelei : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
         {
-            anim.SetTrigger("bubbleStart");
+            anim.SetTrigger("trigger");
             Destroy(gameObject);
         }
         if (collision.gameObject.name == "Collider")
