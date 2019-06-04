@@ -8,8 +8,6 @@ public class Timer : MonoBehaviour
 {
     public int timeLeft = 60;
     public TextMeshProUGUI countdown;
-    public Canvas timeOver;
-    public SpriteRenderer darkCanvas;
 
     void Start()
     {
@@ -18,7 +16,7 @@ public class Timer : MonoBehaviour
     }
     void Update()
     {
-        countdown.text = (" " + timeLeft);
+        countdown.text = ("00:" + timeLeft);
         if (timeLeft == 0)
         {
             SceneManager.LoadScene("End");

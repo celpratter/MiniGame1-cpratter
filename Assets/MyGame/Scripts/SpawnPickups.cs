@@ -43,11 +43,11 @@ public class SpawnPickups : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(UnityEngine.Random.Range(1, 3));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0, 3));
             SpawnFlower();
-            yield return new WaitForSeconds(UnityEngine.Random.Range(1, 3));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0, 3));
             SpawnEi();
-            yield return new WaitForSeconds(UnityEngine.Random.Range(1, 3));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0, 3));
             SpawnSeeds();
         }
 
