@@ -10,6 +10,6 @@ public class ShowScore : MonoBehaviour
 
     void Start()
     {
-        scorePoints.text = scoreCount.score.ToString();
+        scorePoints.text = "Score: " + scoreCount.score.ToString();
     }
 }
