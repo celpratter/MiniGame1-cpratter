@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 81921834}
   - component: {fileID: 81921835}
   m_Layer: 0
-  m_Name: lava
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 230688249}
   - component: {fileID: 230688248}
   m_Layer: 0
-  m_Name: flowerSprites
+  m_Name: FlowerSprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 638262477}
   - component: {fileID: 638262478}
   m_Layer: 0
-  m_Name: boxScore
+  m_Name: BoxScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1783,7 +1783,7 @@ GameObject:
   - component: {fileID: 1949827203}
   - component: {fileID: 1949827204}
   m_Layer: 0
-  m_Name: boxTimer
+  m_Name: BoxTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1909,6 +1909,11 @@ Prefab:
       propertyPath: Bubble
       value: 
       objectReference: {fileID: 1124359983}
+    - target: {fileID: 114984189367025234, guid: 28e01c9ee26824a27a7d7dd861dee111,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e01c9ee26824a27a7d7dd861dee111, type: 2}
   m_IsPrefabAsset: 0
