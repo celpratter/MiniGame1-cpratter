@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteColor;
     private float leftBoundary = -6f;
     private float rightBoundary = 6f;
+    private string nameFlower = "Flower(Clone)";
+    private string nameSeeds = "Seeds(Clone)";
+    private string nameSpiegelei = "Spiegelei(Clone)";
     void Start()
     {
         scoreCount.score = 0;
@@ -29,19 +32,19 @@ public class Player : MonoBehaviour
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("TriggerEvent " + collision.gameObject.name);
-        if (collision.gameObject.name == "Flower(Clone)")
+        if (collision.gameObject.name == nameFlower)
         {
             scoreCount.score += 20;
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
         }
-        if (collision.gameObject.name == "Seeds(Clone)")
+        if (collision.gameObject.name == nameSeeds)
         {
             scoreCount.score += 20;
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
         }
-        if (collision.gameObject.name == "Spiegelei(Clone)")
+        if (collision.gameObject.name == nameSpiegelei)
         {
             scoreCount.score -= 10;
             Debug.Log("score " + scoreCount.score);
