@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     private string nameFlower = "Flower(Clone)";
     private string nameSeeds = "Seeds(Clone)";
     private string nameSpiegelei = "Spiegelei(Clone)";
+    private int scorePositive = 20;
+    private int scoreNegative = 10;
     void Start()
     {
         scoreCount.score = 0;
@@ -34,19 +36,19 @@ public class Player : MonoBehaviour
         Debug.Log("TriggerEvent " + collision.gameObject.name);
         if (collision.gameObject.name == nameFlower)
         {
-            scoreCount.score += 20;
+            scoreCount.score += scorePositive;
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
         }
         if (collision.gameObject.name == nameSeeds)
         {
-            scoreCount.score += 20;
+            scoreCount.score += scorePositive;
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
         }
         if (collision.gameObject.name == nameSpiegelei)
         {
-            scoreCount.score -= 10;
+            scoreCount.score -= scoreNegative;
             Debug.Log("score " + scoreCount.score);
             pointsScore.text = scoreCount.score.ToString();
             spriteColor.color = new Color(1, 0, 0, 1);
