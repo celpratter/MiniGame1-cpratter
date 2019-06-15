@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI pointsScore;
     public MyScore scoreCount;
     SpriteRenderer spriteColor;
+    private float leftBoundary = -6f;
+    private float rightBoundary = 6f;
     void Start()
     {
         scoreCount.score = 0;
@@ -20,7 +22,7 @@ public class Player : MonoBehaviour
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
         var newPosX = Mathf.Clamp(transform.position.x + deltaX,
-            -6f, 6f);
+            leftBoundary, rightBoundary);
 
         transform.position = new Vector2(newPosX, transform.position.y);
     }
