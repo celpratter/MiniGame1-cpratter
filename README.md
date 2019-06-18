@@ -1,6 +1,6 @@
 # MiniGame1-cpratter
 
-**Progress:** 65%
+**Progress:** 94%
 
 ### Development Platform
 - OS: MacOS 10.14.3
