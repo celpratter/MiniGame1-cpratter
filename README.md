@@ -24,8 +24,8 @@ Use arrow keys to move.
 
 ### Mockups
 - Intro Screen
-<div> <img src="./Mockups/intro_screen.jpg" width="300"> </div>
+<div> <img src="./Mockups/intro_screen.jpg" width="500"> </div>
 - Main Screen
-<div> <img src="./Mockups/main_screen.jpg" width="300"> </div>
+<div> <img src="./Mockups/main_screen.jpg" width="500"> </div>
 - End Screen
-<div> <img src="./Mockups/end_screen.jpg" width="300"> </div>
+<div> <img src="./Mockups/end_screen.jpg" width="500"> </div>
